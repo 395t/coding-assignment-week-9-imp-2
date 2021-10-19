@@ -52,7 +52,7 @@ Now we tested which LIIF model would evaluate the best on the large CelebAHQ dat
 ## Results: Accuracy on CelebAHQ
 | Pretrained Dataset | DIV2K | B100 | Urban100 |
 | -- | -- | -- | -- |
-| PSNR Accuracy | 16.83% | 8.78% | 9.02%
+| PSNR Accuracy | 16.83 | 8.78 | 9.02
 
 ## GIRAFFE Summary
 
