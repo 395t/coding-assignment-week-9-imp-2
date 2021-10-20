@@ -99,6 +99,10 @@ to get the set of rotating images, change in depth and horizontal representation
 <img src="Output/tr_d_cars.gif">
 
 <img src="Output/tr_h_cars.gif">
-## Reference
 
-Any code that you borrow or other reference should be properly cited.
+<img src="Output/FDI_Score_Giraffe.png">
+
+## Conclusion
+GIRAFFE provides good results of image synthesis.
+
+
