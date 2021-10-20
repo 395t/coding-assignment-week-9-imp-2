@@ -58,12 +58,12 @@ Now we tested which LIIF model would evaluate the best on the large CelebAHQ dat
 
 The original authors' [NeRF implementation](https://github.com/bmild/nerf) was done in TensorFlow. NeRF is built using an MLP that maps from location and direction to color and opacity (of pixels). The difficulty in implementing NeRF is in the data preprocessing to clean the images with the spatial and directional data necessary for the model to correctly learn. Once the spatial representation is learned, any camera location within the sparse dataset can be simulated or added together to create small clips. 
 
-The test below compares a PyTorch implementation based off of this [github](https://github.com/kwea123/nerf_pl) with the original author's implementation of applying to NeRF to images of a fern. 
+The test below compares a PyTorch implementation based off of this [github](https://github.com/kwea123/nerf_pl) with the original author's implementation of applying NeRF to images of a fern. 
 
 <img src="Output/fern.gif">
 <img src="Output/Fern PSNR.png">
 
-The original paper achieved a PSNR of 25.17 while our's was generally closer to about 27. The main difference in training was that our implementation had a slower learning rate decay. 
+The original paper achieved a PSNR of 25.17 while ours was generally closer to about 27. The main difference in training was that our implementation had a slower learning rate decay. 
 
 Training took close to 8 hours on Colab. 
 
@@ -74,11 +74,11 @@ NeRF-w expands on the original paper and allows for NeRF to be more adaptable to
 <img src="Output/brandenburg.gif">
 <img src="Output/Bradenburg PSNR.png">
 
-The original paper had a PSNR of 29.08. THe PSNR of this implementation maxes out at about 4. However, the images were downsized to make the runtime reasonable, which explains why the number is somewhat lower. The original authors were additionally more likely to have higher computing power and train for significantly longer.
+The original paper had a PSNR of 29.08. The PSNR of this implementation maxes out at about 4. However, the images were downsized to make the runtime reasonable, which explains why the number is somewhat lower. The original authors additionally had higher computing power and the ability to train for significantly longer.
 
-The training for the Bradenburg representation still took an entire day. The experiment can be repeated in the same colab notebook as nerf by checking out the nerfw branch and uploading the brandenburg dataset from the author's website to the colab disk space.
+The training for the Brandenburg representation took an entire day. The experiment can be repeated in the same colab notebook as NeRF by checking out the nerfw branch and uploading the (recommended to be already locally downsized) brandenburg dataset from the paper's author's website to the colab disk space. 
 
-## Conclusion
+### Conclusion
 Both NeRF and Nerf-w provide impressive results under the right scenarios, but require significant compute time to achieve these results. The results are also significantly limited by the quality of the training dataset. 
 
 ## GIRAFFE Summary
