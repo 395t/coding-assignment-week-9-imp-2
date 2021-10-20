@@ -2,6 +2,12 @@
 
 ## Local Implicit Image Function (LIIF)
 
+The LIIF model is used to enhance the resolution of a 2D image by learning continuous image representation.  Below is an example of the input and output of an LIIF.
+
+<p float="middle">
+  <img src="graphs/liif/example.png"/>
+</p>
+
 ### Code
 The authors of the LIIF paper posted their [LIIF implementation](https://github.com/yinboc/liif) here, and this code was used to conduct the experiments. The implicit.ipynb notebook was used in Google Collab to run the model on the three datasets loaded into the repo.
 
