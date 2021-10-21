@@ -87,6 +87,26 @@ The training for the Brandenburg representation took an entire day. The experime
 ### Conclusion
 Both NeRF and Nerf-w provide impressive results under the right scenarios, but require significant compute time to achieve these results. The results are also significantly limited by the quality of the training dataset. 
 
+## Baking Neural Radiance Fields for Real-Time View Synthesis
+
+As there is no code release from the author, we have to implement our own version. Due to the complexity of the paper and coding structure, we were able to implement modification to the model but unable to implement the realtime rendering part. In addition, due to time constraint, we were only able to provide qualitative metric.
+
+### After 200k iteration
+
+<img src="result/blender_paper_lego_spiral_200000_rgb.gif">
+
+<img src="result/fern_test_spiral_200000_rgb.gif">
+
+### After 50k iteration
+
+<img src="result/blender_paper_lego_spiral_050000_rgb.gif">
+
+<img src="result/fern_test_spiral_050000_rgb.gif">
+
+### Conclusion
+
+We can see that the performance in comparasion to the origional paper is not impacted. Even after 50k iteration in training, the result still look impressive in both synthethic lego and fern dataset.
+
 ## GIRAFFE Summary
 
 ### Description - GIRAFFE- Representing Scenes as Compositional Generative Neural Feature Fields
