@@ -1,0 +1,3 @@
+[submodule "nerf_b"]
+	path = nerf_b
+	url = git@github.com:TongruiLi/nerf_b.git
